@@ -1,4 +1,7 @@
 import requests
+from high_order_framework_requests_python import  utils_chrome_selenium
+from high_order_framework_requests_python import  utils_class
+string_Interact1 = utils_class.String_Interact()
 from peewee import *
 
 host = 'localhost'
@@ -13,7 +16,6 @@ class btvn11(Model):
 	link= CharField()
 	class Meta:
 		database=db
-
 
 
 for pageNumber in range(1, 11+1):
